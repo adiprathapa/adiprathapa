@@ -1,5 +1,5 @@
 # Hey, I'm Adi
-a Computer Science student at Cornell University minoring in Artificial Intelligence
+Currently a Computer Science student at Cornell University minoring in Artificial Intelligence
 
 
 ## 🌐 Socials:
