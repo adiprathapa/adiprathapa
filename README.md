@@ -1,4 +1,4 @@
-# Adi Prathapa [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=red)](https://www.linkedin.com/in/adi-prathapa) [![email](https://img.shields.io/badge/Email-0671A4?logo=gmail&logoColor=white)](mailto:aprathapa01@yahoo.com) 
+# Adi Prathapa  
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=99999&color=0671A4&width=300&lines=CS+Student+%40+Cornell+University)](https://git.io/typing-svg)
 
 # Skills
@@ -7,7 +7,7 @@
 ---
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=adiprathapa&color=0671A4&style=flat-square&label=Profile+Views)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=red)](https://www.linkedin.com/in/adi-prathapa) [![email](https://img.shields.io/badge/Email-0671A4?logo=gmail&logoColor=white)](mailto:aprathapa01@yahoo.com) ![Profile Views](https://komarev.com/ghpvc/?username=adiprathapa&color=0671A4&style=flat-square&label=Profile+Views)
 
 *Feel free to reach out for collaborations or just to say hi!*
 
