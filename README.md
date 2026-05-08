@@ -7,7 +7,7 @@
 ---
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000.svg?logo=vercel&logoColor=white)](https://adiprathapa.space) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=red)](https://www.linkedin.com/in/adi-prathapa) [![email](https://img.shields.io/badge/Email-0671A4?logo=gmail&logoColor=white)](mailto:aprathapa01@yahoo.com) ![Profile Views](https://komarev.com/ghpvc/?username=adiprathapa&color=0671A4&style=flat-square&label=Profile+Views)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0671A4?logoColor=white)](YOUR_PORTFOLIO_LINK) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=red)](https://www.linkedin.com/in/adi-prathapa) [![email](https://img.shields.io/badge/Email-0671A4?logo=gmail&logoColor=white)](mailto:aprathapa01@yahoo.com) ![Profile Views](https://komarev.com/ghpvc/?username=adiprathapa&color=0671A4&style=flat-square&label=Profile+Views)
 
 *Feel free to reach out for collaborations or just to say hi!*
 
