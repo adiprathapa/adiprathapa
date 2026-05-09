@@ -7,7 +7,7 @@
 <div align="center">
 
 
-![Snake animation](https://raw.githubusercontent.com/adiprathapa/adiprathapa/output/github-snake-dark.svg)
+![Snake animation](https://raw.githubusercontent.com/adiprathapa/adiprathapa/output/github-snake-dark.svg?v=2)
 
 </div>
 
