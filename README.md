@@ -6,9 +6,12 @@ I build ML systems end to end - graph neural networks, LLM-powered backends, and
 
 ## Things I've built
 
-- **[Tauron](https://github.com/adiprathapa/Tauron)** - GNN early-warning system for dairy herd disease. GRU + GraphSAGE over a herd contact graph predicts mastitis, BRD, and lameness 48 hours ahead; gradient-based explanations run 40× faster than GNNExplainer. Built at the Cornell Digital Ag Hackathon. *PyTorch Geometric · FastAPI · React · D3.js*
-- **[Helicity](https://github.com/AI-HackathonNYC/helicity)** - liquidity stress scoring engine over a NetworkX knowledge graph linking stablecoins, banks, and jurisdictions, with a multi-model LLM jury for causal narratives and IPFS-pinned score snapshots for verifiable audit trails. *FastAPI · React · NetworkX · MCP*
-- **[ZAM](https://github.com/adiprathapa/ZAM)** - AI-powered market sizing tool that generates TAM/SAM/SOM scenarios for startup founders. [Live app](https://zam-nu.vercel.app). *React · Express · MongoDB · Gemini*
+- **[Tauron](https://github.com/adiprathapa/Tauron)** - GNN early-warning system for dairy herd disease. GRU + GraphSAGE over a herd contact graph predicts mastitis, BRD, and lameness 48 hours ahead; gradient-based explanations run 40× faster than GNNExplainer. Built at the Cornell Digital Ag Hackathon.
+*PyTorch Geometric · FastAPI · React · D3.js*
+- **[Helicity](https://github.com/AI-HackathonNYC/helicity)** - liquidity stress scoring engine over a NetworkX knowledge graph linking stablecoins, banks, and jurisdictions, with a multi-model LLM jury for causal narratives and IPFS-pinned score snapshots for verifiable audit trails.
+*FastAPI · React · NetworkX · MCP*
+- **[ZAM](https://github.com/adiprathapa/ZAM)** - AI-powered market sizing tool that generates TAM/SAM/SOM scenarios for startup founders. [Live app](https://zam-nu.vercel.app).
+*React · Express · MongoDB · Gemini*
 
 ## Open source
 
