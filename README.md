@@ -1,8 +1,8 @@
 # Hi, I'm Adi
 
-CS @ Cornell '28 (AI minor) · Data Science Intern @ MITRE · open-source contributor to Kubeflow and Jenkins.
+CS @ Cornell · Data Science Intern @ MITRE
 
-I build ML systems end to end - graph neural networks, LLM-powered backends, and the infrastructure that serves them.
+I build ML systems end to end, graph neural networks, LLM powered backends, and the infra for them.
 
 ## Things I've built
 
