@@ -21,7 +21,7 @@ I build ML systems end to end, graph neural networks, LLM powered backends, and 
 - **CCExtractor** - [test suites](https://github.com/CCExtractor/ccsync/pulls?q=is%3Apr+author%3Aadiprathapa) hardening the ccsync Tasks page UI, covering Reports Toggle behavior and selection state in the multi select utilities
 
 <p align="center">
-  <img src="koi/koi.gif" width="256" alt="My koi, redrawn every night from my GitHub activity" />
+  <img src="koi/koi.gif" width="100%" alt="My koi, redrawn every night from my GitHub activity" />
 </p>
 
 ---
