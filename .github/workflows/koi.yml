@@ -29,10 +29,18 @@ jobs:
         run: |
           git-koi collect "$GITHUB_REPOSITORY_OWNER" --output "$RUNNER_TEMP/koi-snapshot.json"
           git-koi render "$RUNNER_TEMP/koi-snapshot.json" --output-dir koi --body blue
+      # Phones struggle to decode the full GIF, so they get one at half size and every
+      # other frame, about the load of the original square koi.
+      - name: Make the mobile koi
+        run: |
+          sudo apt-get install -y -qq gifsicle > /dev/null
+          frame_count=$(gifsicle --info koi/koi.gif | head -1 | awk '{print $3}')
+          gifsicle --resize-method sample --scale 0.5 --delay 13 --loopcount=forever -O2 \
+            koi/koi.gif $(seq -f "#%g" 0 2 $((frame_count - 1))) -o koi/koi-mobile.gif
       - name: Commit the koi if it changed
         shell: bash
         run: |
-          git add koi/koi.gif
+          git add koi/koi.gif koi/koi-mobile.gif
           if git diff --cached --quiet; then
             echo "The koi is unchanged; nothing to commit."
             exit 0
