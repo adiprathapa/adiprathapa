@@ -22,21 +22,27 @@ jobs:
       - uses: actions/checkout@v7
       # Built from the adiprathapa/git-koi fork, which adds the blue body.
       - name: Install git-koi
-        run: cargo install --git https://github.com/adiprathapa/git-koi --locked
+        run: |
+          cargo install --git https://github.com/adiprathapa/git-koi --locked
+          cargo install --git https://github.com/adiprathapa/git-koi --locked \
+            --features narrow --root "$RUNNER_TEMP/narrow"
       - name: Draw the koi
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           git-koi collect "$GITHUB_REPOSITORY_OWNER" --output "$RUNNER_TEMP/koi-snapshot.json"
           git-koi render "$RUNNER_TEMP/koi-snapshot.json" --output-dir koi --body blue
-      # Phones struggle to decode the full GIF, so they get one at half size and every
-      # other frame, about the load of the original square koi.
+      # Phones get the narrow koi, so the fish keeps its size on a small screen, at half
+      # size and every other frame so it stays light enough for a phone to decode.
       - name: Make the mobile koi
         run: |
+          "$RUNNER_TEMP/narrow/bin/git-koi" render "$RUNNER_TEMP/koi-snapshot.json" \
+            --output-dir "$RUNNER_TEMP/koi-narrow" --body blue
           sudo apt-get install -y -qq gifsicle > /dev/null
-          frame_count=$(gifsicle --info koi/koi.gif | head -1 | awk '{print $3}')
+          narrow_gif="$RUNNER_TEMP/koi-narrow/koi.gif"
+          frame_count=$(gifsicle --info "$narrow_gif" | head -1 | awk '{print $3}')
           gifsicle --resize-method sample --scale 0.5 --delay 13 --loopcount=forever -O2 \
-            koi/koi.gif $(seq -f "#%g" 0 2 $((frame_count - 1))) -o koi/koi-mobile.gif
+            "$narrow_gif" $(seq -f "#%g" 0 2 $((frame_count - 1))) -o koi/koi-mobile.gif
       - name: Commit the koi if it changed
         shell: bash
         run: |
