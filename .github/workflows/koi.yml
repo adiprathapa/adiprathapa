@@ -20,10 +20,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: yalongwastaken/git-koi@v1
-        with:
-          body: white
-          output-dir: koi
+      # Built from the adiprathapa/git-koi fork, which adds the blue body.
+      - name: Install git-koi
+        run: cargo install --git https://github.com/adiprathapa/git-koi --locked
+      - name: Draw the koi
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git-koi collect "$GITHUB_REPOSITORY_OWNER" --output "$RUNNER_TEMP/koi-snapshot.json"
+          git-koi render "$RUNNER_TEMP/koi-snapshot.json" --output-dir koi --body blue
       - name: Commit the koi if it changed
         shell: bash
         run: |
